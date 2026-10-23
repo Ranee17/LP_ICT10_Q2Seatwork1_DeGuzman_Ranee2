@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Marching Band</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: url("https://storage.googleapis.com/oa_disk001/oblaspinas/69/classfeed/3484/cover_photo/1784173583-919.png") center / cover no-repeat fixed;
+            color: white;
+            text-align: center;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        main {
+            margin-top: 30px;
+        }
+
+        form {
+            display: inline-block;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 8px;
+        }
+
+        #result {
+            background: lightgray;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 350px;
+            max-width: 80%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Marching Band</h1>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name"><br>
+            <input type="text" id="last_name" placeholder="Enter your last name"><br>
+            <input type="button" py-click="candidate_checker" value="Enter">
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
